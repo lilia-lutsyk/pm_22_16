@@ -50,7 +50,7 @@ export const serve = () => {
     }
   });
   gulp.watch('app/*.html', html);
-  gulp.watch('app/css/*.css', scss);
+  gulp.watch('app/scss/*.scss', scss);
   gulp.watch('app/js/*.js', js);
   gulp.watch('app/img/*', img);
   gulp.watch('./app/data/*.json', copyJson);
