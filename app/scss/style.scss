@@ -1,0 +1,67 @@
+$primary-color: #0e0c28;
+$secondary-color: #f1ac16;
+$text-color: #000;
+$text-light: #b4b3b3;
+$border-color: #8e8eac;
+$gray: #7c7878;
+
+$font-title: "Bebas Neue", serif;
+$font-main: "Open Sans", serif;
+$font-secondary: "Poppins", sans-serif;
+
+$max-width: 1700px;
+$gap-large: 60px;
+$gap-medium: 35px;
+$gap-small: 15px;
+
+$transition-speed: 0.5s;
+$line-height-base: 1.5;
+$letter-spacing-title: 4px;
+$border-radius: 5px;
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.static-background {
+  width: 4000px;
+  height: 473.5px;
+  position: absolute;
+  top: 185px;
+  left: 0;
+  z-index: -1;
+  background-color: $primary-color;
+}
+
+.left {
+  background-color: $secondary-color;
+  width: 500px;
+  padding: 50px 0;
+  margin: 40px 0 40px 20px;
+}
+
+.left hr {
+  background-color: $gray;
+}
+
+.header_title {
+  font-family: $font-title;
+  font-size: 80px;
+  color: white;
+  letter-spacing: $letter-spacing-title;
+}
+
+.aboutme .aboutme_text {
+  color: $text-light;
+  font-family: $font-secondary;
+}

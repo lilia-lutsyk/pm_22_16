@@ -19,7 +19,6 @@ export const html = () => {
 export const scss = () => {
   return gulp.src('app/scss/*.scss')
     .pipe(sassProcessor().on('error', sassProcessor.logError))
-    .pipe(cleanCSS())
     .pipe(gulp.dest('dist/css'))
     .pipe(browserSync.stream());
 };
@@ -33,7 +32,6 @@ export const js = () => {
 
 export const img = () => {
   return gulp.src('app/img/*')
-    .pipe(imagemin())
     .pipe(gulp.dest('dist/img'));
 };
 
@@ -46,7 +44,7 @@ export const copyJson = () => {
 export const serve = () => {
   browserSync.init({
     server: {
-      baseDir: './dist'
+      baseDir: './app'
     }
   });
   gulp.watch('app/*.html', html);

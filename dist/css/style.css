@@ -1,0 +1,46 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.static-background {
+  width: 4000px;
+  height: 473.5px;
+  position: absolute;
+  top: 185px;
+  left: 0;
+  z-index: -1;
+  background-color: #0e0c28;
+}
+
+.left {
+  background-color: #f1ac16;
+  width: 500px;
+  padding: 50px 0;
+  margin: 40px 0 40px 20px;
+}
+
+.left hr {
+  background-color: #7c7878;
+}
+
+.header_title {
+  font-family: "Bebas Neue", serif;
+  font-size: 80px;
+  color: white;
+  letter-spacing: 4px;
+}
+
+.aboutme .aboutme_text {
+  color: #b4b3b3;
+  font-family: "Poppins", sans-serif;
+}

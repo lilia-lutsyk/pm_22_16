@@ -1,0 +1,7 @@
+document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".circle").forEach(e=>{let t=parseInt(e.getAttribute("data-percent"),10),s=e.querySelector(".fg").r.baseVal.value,n=2*Math.PI*s,i=-t/100*n,a=e.querySelector(".fg");a.style.strokeDasharray=n+" "+n,a.style.strokeDashoffset=n,setTimeout(()=>{a.style.transition="stroke-dashoffset 2s ease",a.style.strokeDashoffset=n-i},0)}),document.querySelectorAll(".drop-box").forEach(function(t){t.addEventListener("click",function(){let e=t.nextElementSibling;e.classList.contains("hidden")?(e.classList.remove("hidden"),e.classList.add("slide-in"),e.addEventListener("animationend",()=>{e.classList.remove("slide-in"),e.classList.remove("hidden")})):(e.classList.add("slide-out"),e.addEventListener("animationend",()=>{e.classList.add("hidden"),e.classList.remove("slide-out")}))})});{var e=[{major:"Computer Science",university:"University of Example",years:"2005–2009"},{major:"Software Engineering",university:"Example University",years:"2009–2011"},{major:"Web Development",university:"Another Example University",years:"2011–2013"}];let t=document.getElementById("education-section");t.innerHTML="",e.forEach(e=>{t.innerHTML+=`
+                <div class="education_card">
+                    <h4 class="education_card__title">${e.major}</h4>
+                    <p class="education_card__text">${e.university}</p>
+                    <p class="education_card__text">${e.years}</p>
+                </div>
+            `}),console.log(t.innerHTML)}});
